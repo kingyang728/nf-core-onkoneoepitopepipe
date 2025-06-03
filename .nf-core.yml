@@ -1,0 +1,17 @@
+repository_type: pipeline
+
+nf_core_version: 3.3.1
+
+lint: {}
+
+template:
+  org: nf-core
+  name: onkoneoepitopepipe
+  description: Flexible bioinformatics pipeline for accurate neoepitope prediction
+    from NGS data, supporting comprehensive somatic variant calling and annotation.
+  author: Jingyu Yang
+  version: 1.0.0dev
+  force: true
+  outdir: .
+  skip_features: []
+  is_nfcore: true
