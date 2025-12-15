@@ -1,0 +1,64 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
+name: "netmhciipan"
+## TODO nf-core: Add a description of the module and list keywords
+description: write your description here
+keywords:
+  - sort
+  - example
+  - genomics
+tools:
+  - "netmhciipan":
+      ## TODO nf-core: Add a description and other details for the software below
+      description: ""
+      homepage: ""
+      documentation: ""
+      tool_dev_url: ""
+      doi: ""
+      licence:
+      identifier: biotools:netmhciipan
+
+## TODO nf-core: Add a description of all of the variables used as input
+input:
+  - - meta:
+        type: map
+        description: |
+          Groovy Map containing sample information
+          e.g. `[ id:'sample1' ]`
+
+    - sequence:
+        # TODO nf-core: Update the information obtained from bio.tools and make sure that it is correct
+        type: file
+        description: sequence file
+        pattern: "*.{fasta}"
+        ontologies:
+          - edam: "http://edamontology.org/data_2044" # Sequence
+          - edam: "http://edamontology.org/format_1929" # FASTA
+
+## TODO nf-core: Add a description of all of the variables used as output
+output:
+  - protein_features:
+      - meta:
+          type: map
+          description: |
+            Groovy Map containing sample information
+            e.g. `[ id:'sample1' ]`
+      - "*.{html}":
+          # TODO nf-core: Update the information obtained from bio.tools and make sure that it is correct
+          type: file
+          description: protein_features file
+          pattern: "*.{html}"
+          ontologies:
+            - edam: "http://edamontology.org/data_1277" # Protein features
+            - edam: "http://edamontology.org/format_2331" # HTML
+
+  - versions:
+      - "versions.yml":
+          type: file
+          description: File containing software versions
+          pattern: "versions.yml"
+
+authors:
+  - "@jingyu"
+maintainers:
+  - "@jingyu"
