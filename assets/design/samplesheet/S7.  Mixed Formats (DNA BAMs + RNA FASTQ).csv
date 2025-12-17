@@ -1,0 +1,4 @@
+sample_id,patient_id,assay,status,lane,fastq_1,fastq_2,bam,tumor_vcf_snv_indel,input_fasta,hla_alleles_str,tumor_vcf_sv,tumor_vcf_cnv,rna_fusion_calls,intervals,cancer_type
+LH007_T_DNA,LH007,WES,tumor,,,,/data/LH007_Tumor.bam,,,,,,,/ref/exome.bed,OV
+LH007_N_DNA,LH007,WES,normal,,,,/data/LH007_Normal.bam,,,,,,,/ref/exome.bed,OV
+LH007_T_RNA,LH007,RNA,tumor,1,/data/LH007_R1.fq.gz,/data/LH007_R2.fq.gz,,,,,,,,/ref/exome.bed,OV
