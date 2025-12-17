@@ -171,6 +171,7 @@ yes n | nf-core modules create summary_report \
 echo ">>> Step 3: Creating Subworkflows..."
 
 SUBWORKFLOWS=(
+    "input_check"
     "phase1_qc_alignment"
     "phase2_variant_discovery"
     "phase3_molecular_char"
